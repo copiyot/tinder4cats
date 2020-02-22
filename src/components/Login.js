@@ -1,0 +1,68 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+const Login = props => {
+  console.log(props);
+  return (
+    <div className=" center-login mt-4">
+      <div className="card">
+        <form className="text-center border border-light p-5" action="#!">
+          <p className="h4 text-uppercase mb-4">Tinder 4 Cats</p>
+          <input
+            type="email"
+            id="defaultLoginFormEmail"
+            className="form-control mb-4"
+            placeholder="E-mail"
+          />
+          <input
+            type="password"
+            id="defaultLoginFormPassword"
+            className="form-control mb-4"
+            placeholder="Password"
+          />
+
+          <div className="d-flex justify-content-around">
+            <div>
+              <div className="custom-control custom-checkbox">
+                <input
+                  type="checkbox"
+                  className="custom-control-input"
+                  id="defaultLoginFormRemember"
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            onClick={() => {
+              props.signIn(true);
+              props.history.push("/app");
+            }}
+            className="btn btn-info btn-block my-4"
+            type="submit"
+          >
+            Sign in
+          </button>
+
+          <p>
+            <Link to="/signup">Register</Link>
+          </p>
+
+          <a href="#" className="mx-2" role="button">
+            <i className="fab fa-facebook-f light-blue-text"></i>
+          </a>
+          <a href="#" className="mx-2" role="button">
+            <i className="fab fa-twitter light-blue-text"></i>
+          </a>
+          <a href="#" className="mx-2" role="button">
+            <i className="fab fa-linkedin-in light-blue-text"></i>
+          </a>
+          <a href="#" className="mx-2" role="button">
+            <i className="fab fa-github light-blue-text"></i>
+          </a>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default Login;
