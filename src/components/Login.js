@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Login = props => {
   console.log(props);
   return (
-    <div className=" center-login mt-4">
+    <div className=" center-login pt-4">
       <div className="card">
         <form className="text-center border border-light p-5" action="#!">
           <p className="h4 text-uppercase mb-4">Tinder 4 Cats</p>
