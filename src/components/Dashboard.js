@@ -60,11 +60,7 @@ const Dashboard = () => {
             </div>
 
             <div className="avatar mx-auto white">
-              <img
-                src={profile.url}
-                className="rounded-circle"
-                alt="woman avatar"
-              />
+              <img src={profile.url} className="rounded-circle" alt="woman avatar" />
             </div>
 
             <div className="card-body text-center">
@@ -123,15 +119,9 @@ const Dashboard = () => {
             <div className="card">
               <div
                 className="imageAndSpinner"
-                onClick={() =>
-                  onLoadProfileHandler(currentImage.id, currentImage.url)
-                }
+                onClick={() => onLoadProfileHandler(currentImage.id, currentImage.url)}
               >
-                {currentImage.url ? (
-                  <ImageOverlay url={currentImage.url} />
-                ) : (
-                  <Spinner />
-                )}
+                {currentImage.url ? <ImageOverlay url={currentImage.url} /> : <Spinner />}
               </div>
 
               <div className="card-body actions">
