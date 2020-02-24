@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Login = props => {
-  console.log(props);
   return (
     <div className=" center-login mt-4">
       <div className="card">

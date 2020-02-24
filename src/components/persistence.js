@@ -10,7 +10,7 @@ export default (action, id) => {
         ? { likes: 1, dislikes: 0 }
         : { likes: 0, dislikes: 1 };
     localStorage.setItem(id, JSON.stringify(stats));
-    console.log(localStorage.getItem(id), id);
+    // console.log(localStorage.getItem(id), id);
   }
 };
 

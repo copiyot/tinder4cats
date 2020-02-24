@@ -4,23 +4,23 @@ const SignUp = props => {
   return (
     <div className="center-signup mt-4">
       <div className="card">
-        <form class="text-center border border-light px-5 py-2" action="#!">
-          <p class="text-uppercase h4 mb-4">Register with Tinder 4 Cats</p>
+        <form className="text-center border border-light px-5 py-2" action="#!">
+          <p className="text-uppercase h4 mb-4">Register with Tinder 4 Cats</p>
 
-          <div class="form-row mb-4">
-            <div class="col">
+          <div className="form-row mb-4">
+            <div className="col">
               <input
                 type="text"
                 id="defaultRegisterFormFirstName"
-                class="form-control"
+                className="form-control"
                 placeholder="First name"
               />
             </div>
-            <div class="col">
+            <div className="col">
               <input
                 type="text"
                 id="defaultRegisterFormLastName"
-                class="form-control"
+                className="form-control"
                 placeholder="Last name"
               />
             </div>
@@ -28,14 +28,14 @@ const SignUp = props => {
           <input
             type="email"
             id="defaultRegisterFormEmail"
-            class="form-control mb-4"
+            className="form-control mb-4"
             placeholder="E-mail"
           />
 
           <input
             type="password"
             id="defaultRegisterFormPassword"
-            class="form-control mb-4"
+            className="form-control mb-4"
             placeholder="Password"
             aria-describedby="defaultRegisterFormPasswordHelpBlock"
           />
@@ -43,15 +43,15 @@ const SignUp = props => {
           <input
             type="text"
             id="defaultRegisterPhonePassword"
-            class="form-control mb-4"
+            className="form-control mb-4"
             placeholder="Phone number"
             aria-describedby="defaultRegisterFormPhoneHelpBlock"
           />
 
-          <div class="custom-control custom-checkbox">
+          <div className="custom-control custom-checkbox">
             <input
               type="checkbox"
-              class="custom-control-input"
+              className="custom-control-input"
               id="defaultRegisterFormNewsletter"
             />
           </div>
@@ -61,23 +61,23 @@ const SignUp = props => {
               e.preventDefault();
               props.history.push("/login");
             }}
-            class="btn btn-info my-2 btn-block"
+            className="btn btn-info my-2 btn-block"
             type="submit"
           >
             Sign Up
           </button>
 
-          <a href="#" class="mx-2" role="button">
-            <i class="fab fa-facebook-f light-blue-text"></i>
+          <a href="#" className="mx-2" role="button">
+            <i className="fab fa-facebook-f light-blue-text"></i>
           </a>
-          <a href="#" class="mx-2" role="button">
-            <i class="fab fa-twitter light-blue-text"></i>
+          <a href="#" className="mx-2" role="button">
+            <i className="fab fa-twitter light-blue-text"></i>
           </a>
-          <a href="#" class="mx-2" role="button">
-            <i class="fab fa-linkedin-in light-blue-text"></i>
+          <a href="#" className="mx-2" role="button">
+            <i className="fab fa-linkedin-in light-blue-text"></i>
           </a>
-          <a href="#" class="mx-2" role="button">
-            <i class="fab fa-github light-blue-text"></i>
+          <a href="#" className="mx-2" role="button">
+            <i className="fab fa-github light-blue-text"></i>
           </a>
 
           <hr />
